@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto+Slab:wght@500&family=Roboto:wght@300&display=swap');
+
+
+:root{
+
+  --selected-theme-background-color: var(  --green-theme-background-color);
+  --selected-theme-main-color: var( --green-theme-main-color);
+  --selected-theme-sub-text-color: var( --green-theme-sub-text-color);
+  --selected-theme-nav-background-color: var(  --green-theme-nav-background-color);
+
+
+
+  /* primary color yellow */
+
+  --yellow-theme-background-color: #1d1d1d;
+  --yellow-theme-sub-text-color: #ffffff;
+  --yellow-theme-main-color: #ffdd40;
+  --yellow-theme-nav-background-color: #181818;
+
+  /* secondary color blue */
+  --blue-theme-background-color: #1d1d1d;
+  --blue-theme-sub-text-color: #ffffff;
+  --blue-theme-main-color: #5078ff;
+  --blue-theme-nav-background-color: #181818;
+
+  /* secondary color green */
+  --green-theme-background-color: #1d1d1d;
+  --green-theme-sub-text-color: #ffffff;
+  --green-theme-main-color: #6ac045;
+  --green-theme-nav-background-color: #181818;
+
+  /* secondary color red */
+  --red-theme-background-color: #1d1d1d;
+  --red-theme-sub-text-color: #ffffff;
+  --red-theme-main-color: #E82A2A;
+  --red-theme-nav-background-color: #181818;
+
+  /* secondary color purple */
+  --purple-theme-background-color: #1d1d1d;
+  --purple-theme-sub-text-color: #ffffff;
+  --purple-theme-main-color: #a64dff;
+  --purple-theme-nav-background-color: #181818;
+
+  /* secondary color orange */
+  --orange-theme-background-color: #1d1d1d;
+  --orange-theme-sub-text-color: #ffffff;
+  --orange-theme-main-color: #ff8c00;
+  --orange-theme-nav-background-color: #181818;
+  
+  
+
+
+
+
+
+
+  --font-base: "roboto Slab",serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
+
+html{
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body{
+ 
+  background: var(--selected-theme-background-color);
+  height: 100%;
+}
+
+#root{
+  height: 100%;
+}
+
